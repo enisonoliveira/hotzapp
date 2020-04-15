@@ -31,6 +31,10 @@ configurando no laravel o pacote
     },
     
       
+
+=========enviando uma novo boleto ==============
+
+
 use HotzApp\Api\Customer;
 use HotzApp\Api\Items;
 use HotzApp\Api\Billet;
