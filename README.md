@@ -3,6 +3,8 @@
 pacote php laravel 5.7
 php desejável >= 7.2
 
+obs: essa eu sempre utilizo filas, para envio e consumo de serviços, mas não necessariamente precisa ser fila pra consumir o pacote.
+
 configurando no laravel o pacote
  primeiro registrar o serviceprovider no arquivo config/app.php 
  em providers adiciona a seguinte linha
@@ -53,16 +55,11 @@ class PaymentBillentHotzApp implements ShouldQueue
     private  $payment;
     private  $customer;
     private  $order;
-    private  $idcustomer;
-    private  $customerDb;
-    private  $paymentDB;
     private  $request;
     
-    public function __construct($array)
+    public function __construct()
     {
-        date_default_timezone_set('America/Sao_Paulo');
-        $this->request = new Request();
-        $this->array=$array;
+       
     }
 
     /**
@@ -142,7 +139,7 @@ class PaymentBillentHotzApp implements ShouldQueue
     {
         $this->billet= new Billet;
         $this->customerDb= self::getCustomer();
-        $this->billet->setDoc($this->customerDb->cpf);
+        $this->billet->setDoc("700.274.150-07");
         $this->billet->setCurrencyCodeFrom('R$');
         $this->billet->setTotalPrice("7000");
         $this->billet->setBilletUrl("");
