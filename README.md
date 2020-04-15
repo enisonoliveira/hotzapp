@@ -3,9 +3,9 @@
 pacote php laravel 5.7
 php desejável >= 7.2
 
-obs: essa eu sempre utilizo filas, para envio e consumo de serviços, mas não necessariamente precisa ser fila pra consumir o pacote.
+obs: Sempre utilizo filas, para envio e consumo de serviços, mas não necessariamente precisa ser fila pra consumir o pacote.
 
-configurando no laravel o pacote
+configurando no laravel o pacote,
  primeiro registrar o serviceprovider no arquivo config/app.php 
  em providers adiciona a seguinte linha
  
