@@ -1,0 +1,23 @@
+{
+    "name": "hotzapp",
+    "description": "Integração com a hotzapp para Laravel",
+    "authors": [
+        {
+            "name": "Enison Oliveira",
+            "email": "enisonoliveira@hotmail.com"
+        }
+    ],
+    "version": "1.0",
+    "type": "package",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": ["Gateway Payment", "Gateway de Pagamentos", "HotzApp", "Laravel", "Gateway", "Laravel Gateway"],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HotzApp\\": "src/"
+        }
+    }
+}
