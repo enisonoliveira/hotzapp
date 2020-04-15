@@ -104,11 +104,6 @@ class PaymentBillentHotzApp implements ShouldQueue
     }
 
 
-    public function getCustomer(){
-
-        return ct::find($this->idcustomer);
-    }
-
     public  function iso8601() 
     {
         $time=time();
