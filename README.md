@@ -16,7 +16,10 @@ configurando no laravel o pacote
   
   para ser reconhecido e instalado pelo composer adicione no arquivo 
   composer.json na raiz do projeto a seguinte linha 
-  em autoload, psr-4 "HotzApp\\": "hotzapp/"
+  em autoload, psr-4 logo apos "App\\": "app/", adicione
+  
+  "HotzApp\\": "hotzapp/"
+  
    ficando dessa forma 
    
     "autoload": {
