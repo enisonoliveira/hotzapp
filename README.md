@@ -36,6 +36,7 @@ configurando no laravel o pacote,
     },
     
       
+rode o comando composer install
 
 =========enviando uma novo boleto ==============
 
